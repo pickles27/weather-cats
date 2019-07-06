@@ -9,11 +9,11 @@ var List = (props) => {
 			</div>
 		));
 	if (displayed.length === 0) {
-		displayed = <p>no results unfortunately, please try a different search</p>;
+		displayed = <p className="invalidSearchMessage">no results unfortunately, please try a different search</p>;
 	}
 	return (
 		<div className="listDiv">
-			<h4>Select your city:</h4>
+			<h4 className="selectCityMessage">Select your city:</h4>
 			{displayed}
 		</div>
 	);

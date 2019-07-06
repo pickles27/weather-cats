@@ -9,8 +9,8 @@ var Results = (props) => {
 			<div className="resultsSpansDiv">
 				<span className="imageSpan"><img src={imageURL}/></span>
 				<span className="infoSpan">
-					<h3>{props.city}</h3>
-					<h4>{weatherData.weather_state_name}</h4>
+					<h2>{props.city}</h2>
+					<p className="weatherStatus">{weatherData.weather_state_name}</p>
 					<p>Max: {Math.round(weatherData.max_temp * 10) / 10}&deg;C</p>
 					<p>Min: {Math.round(weatherData.min_temp * 10) / 10}&deg;C</p>
 					<p>Humidity: {weatherData.humidity}%</p>

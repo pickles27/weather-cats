@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Coustard:900|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Coustard:900|Open+Sans:400,700&display=swap');
 
 html {
 	text-align: center;
@@ -20,6 +20,14 @@ h1, h2, h3, h4 {
 	margin: 0pt;
 }
 
+h1 {
+	text-shadow:
+		-2px -2px 3px white,
+		2px -2px 3px white,
+		-2px 2px 3px white,
+		2px 2px 3px white;
+}
+
 p {
 	margin: 0pt;
 }
@@ -30,4 +38,14 @@ html, body, #root, .page {
 
 .page {
 	display: flex;
+	justify-content: center;
+}
+
+button, input[type="submit"] {
+	background: rgba(255, 255, 255, .6);
+}
+
+button:hover, input[type="submit"]:hover {
+	background: rgba(255, 255, 255, .9);
+	cursor: pointer;
 }

@@ -9,9 +9,11 @@ var Input = (props) => {
 	}
 	return (
 		<div className="inputDiv">
-			<h3>Enter your city:</h3>
-			<input onChange={props.getInput} />
-			<button onClick={props.searchLocations}>search</button>
+			<h1>weather cats</h1>
+			<form onSubmit={props.searchLocations}>
+			<input placeholder="Enter a city" onChange={props.getInput} />
+			<input type="submit" className="searchButton" value="search"/>
+			</form>
 			{list}
 		</div>
 	);

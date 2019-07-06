@@ -22,12 +22,14 @@ class App extends React.Component {
 	}
 
 	getInput(e) {
+		e.preventDefault();
 		this.setState({
 			userInput: e.target.value
 		});
 	}
 
-	searchLocations() {
+	searchLocations(e) {
+		e.preventDefault();
 		var query = '/search/' + this.state.userInput;
 		axios.get(query)
 		.then(response => {
@@ -42,6 +44,7 @@ class App extends React.Component {
 	}
 
 	chooseLocation(e) {
+		e.preventDefault();
 		var url = '/data/' + e.target.id;
 		var city = e.target.name;
 		axios.get(url)
