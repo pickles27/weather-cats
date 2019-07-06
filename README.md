@@ -35,3 +35,10 @@ https://weathercatsmedia.s3.amazonaws.com/h.jpg
 
 showers cat:
 https://weathercatsmedia.s3.amazonaws.com/s.jpg
+
+
+Stretch goals:
+-temperature conversion between C and F
+-improve 'results' page for narrow screens < 1000 px
+-create collections of cat pictures for each weather type so users get more variety
+-if result of locationSearch has an array length of 1, go immediately to results page (instead of having to click city name)
