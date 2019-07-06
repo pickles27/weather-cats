@@ -46,7 +46,7 @@ app.get('/data/:woeid', cors(corsOptions), (req, res) => {
   })
 });
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`listening on port ${port}........... o.o`);
 });
