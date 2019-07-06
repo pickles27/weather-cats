@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard:900|Open+Sans&display=swap');
+
+html {
+	text-align: center;
+	background-image: url('https://weathercatsmedia.s3.amazonaws.com/homeBackground.jpg');
+	background-color: #F4F5FA;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: relative;
+}
+
+html,input,button {
+	font-family: 'Open Sans', serif;
+	font-size: 20pt;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Coustard', serif;
+	margin: 0pt;
+}
+
+p {
+	margin: 0pt;
+}

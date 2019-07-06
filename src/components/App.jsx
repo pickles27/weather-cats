@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Input from './Input.jsx';
-import List from './List.jsx';
 import Results from './Results.jsx';
+import './styles/App.css';
 
 class App extends React.Component {
 	constructor() {
@@ -11,7 +11,9 @@ class App extends React.Component {
 			userInput: '',
 			locationList: [],
 			page: 'home',
-			woeid: null
+			city: '',
+			weatherData: {},
+			unit: 'C'
 		};
 		this.getInput = this.getInput.bind(this);
 		this.searchLocations = this.searchLocations.bind(this);
@@ -35,15 +37,24 @@ class App extends React.Component {
 			});
 		})
 		.catch(error => {
-			console.log('error: ', error.response);
+			console.log('error.response: ', error.response);
 		});
 	}
 
 	chooseLocation(e) {
-		this.setState({
-			woeid: e.target.id,
-			page: 'results'
-		});
+		var url = '/data/' + e.target.id;
+		var city = e.target.name;
+		axios.get(url)
+		.then(response => {
+			this.setState({
+				city: city,
+				weatherData: response.data,
+				page: 'results'
+			});
+		})
+		.catch(error => {
+			console.log('error.response: ', error.response);
+		})
 	}
 
 	newSearch() {
@@ -51,25 +62,37 @@ class App extends React.Component {
 			userInput: '',
 			locationList: [],
 			page: 'home',
-			woeid: null
+			city: '',
+			weatherData: {}
 		});
+	}
+
+	changeUnits() {
+		if (this.state.unit === 'C') {
+			this.setState({
+				unit: 'F'
+			});
+		} else {
+			this.setState({
+				unit: 'C'
+			});
+		}
 	}
 
 	render() {
 		var displayed = null;
-		var searchBar = null;
 		if (this.state.page === 'home' || this.state.page === 'list') {
-			searchBar = <Input getInput={this.getInput} searchLocations={this.searchLocations}/>;
-		}
-		if (this.state.page === 'list') {
-			displayed = <List locationList={this.state.locationList} chooseLocation={this.chooseLocation}/>;
+			displayed = <Input page={this.state.page} 
+												 getInput={this.getInput} 
+												 searchLocations={this.searchLocations}
+												 locationList={this.state.locationList}
+												 chooseLocation={this.chooseLocation}/>;
 		}
 		if (this.state.page === 'results') {
-			displayed = <Results newSearch={this.newSearch}/>;
+			displayed = <Results city={this.state.city} weatherData={this.state.weatherData} newSearch={this.newSearch}/>;
 		}
 		return (
-			<div>
-				{searchBar}
+			<div className="page">
 		  	{displayed}
 		  </div>
 		);

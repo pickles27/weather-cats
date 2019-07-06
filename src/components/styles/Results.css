@@ -1,0 +1,31 @@
+.resultsPage {
+	background-color: white;
+	text-align: left;
+	margin: 0;
+}
+
+.resultsSpansDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.infoSpan {
+	margin-top: auto;
+	margin-bottom: auto;
+	flex: 50%;
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	padding-left: 3%;
+}
+
+.imageSpan {
+	flex: 50%;
+	text-align: right;
+	padding-right: 3%;
+}
+
+.newSearchButton {
+
+}
