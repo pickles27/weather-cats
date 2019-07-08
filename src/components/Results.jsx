@@ -3,7 +3,7 @@ import './styles/Results.css';
 
 var Results = (props) => {
 	var weatherData = props.weatherData;
-	var imageURL = 'https://weathercatsmedia.s3.amazonaws.com/' + weatherData.weather_state_abbr + '.jpg';
+	var imageURL = 'https://d5lv058fmgggj.cloudfront.net/' + weatherData.weather_state_abbr + '.jpg';
 	return (
 		<div className="resultsPage">
 			<div className="resultsSpansDiv">
