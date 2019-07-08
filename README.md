@@ -8,33 +8,43 @@ To use:
 
 clear weather cat:
 https://weathercatsmedia.s3.amazonaws.com/c.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/c.jpg)
 
 thunderstorm cat:
 https://weathercatsmedia.s3.amazonaws.com/t.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/t.jpg)
 
 snow cat:
 https://weathercatsmedia.s3.amazonaws.com/sn.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/sn.jpg)
 
 sleet cat:
 https://weathercatsmedia.s3.amazonaws.com/sl.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/sl.jpg)
 
 heavy rain cat:
 https://weathercatsmedia.s3.amazonaws.com/hr.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/hr.jpg)
 
 light rain cat:
 https://weathercatsmedia.s3.amazonaws.com/lr.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/lr.jpg)
 
 heavy cloud cat:
 https://weathercatsmedia.s3.amazonaws.com/hc.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/hc.jpg)
 
 light cloud cat:
 https://weathercatsmedia.s3.amazonaws.com/lc.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/lc.jpg)
 
 hail cat:
 https://weathercatsmedia.s3.amazonaws.com/h.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/h.jpg)
 
 showers cat:
 https://weathercatsmedia.s3.amazonaws.com/s.jpg
+(cdn url: https://d5lv058fmgggj.cloudfront.net/s.jpg)
 
 
 **************
