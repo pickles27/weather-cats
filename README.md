@@ -47,3 +47,5 @@ Stretch goals:
 3. create collections of cat pictures for each weather type so users get more variety
 
 4. if result of locationSearch has an array length of 1, go immediately to results page (instead of having to click city name)
+
+5. sort location results
