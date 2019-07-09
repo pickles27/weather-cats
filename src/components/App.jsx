@@ -13,9 +13,12 @@ class App extends React.Component {
 			page: 'home',
 			city: '',
 			weatherData: {},
-			unit: 'C'
+			unitTemp: 'C', //or 'F'
+			unitSpeed: 'mph' //or 'km/h'
 		};
 		this.getInput = this.getInput.bind(this);
+		this.toggleTempUnit = this.toggleTempUnit.bind(this);
+		this.toggleSpeedUnit = this.toggleSpeedUnit.bind(this);
 		this.searchLocations = this.searchLocations.bind(this);
 		this.chooseLocation = this.chooseLocation.bind(this);
 		this.newSearch = this.newSearch.bind(this);
@@ -25,6 +28,20 @@ class App extends React.Component {
 		e.preventDefault();
 		this.setState({
 			userInput: e.target.value
+		});
+	}
+
+	toggleTempUnit(e) {
+		e.preventDefault();
+		this.setState({
+			unitTemp: this.state.unitTemp === 'C' ? 'F' : 'C'
+		});
+	}
+
+	toggleSpeedUnit(e) {
+		e.preventDefault();
+		this.setState({
+			unitSpeed: this.state.unitSpeed === 'mph' ? 'km/h' : 'mph'
 		});
 	}
 
@@ -100,7 +117,13 @@ class App extends React.Component {
 												 chooseLocation={this.chooseLocation}/>;
 		}
 		if (this.state.page === 'results') {
-			displayed = <Results city={this.state.city} weatherData={this.state.weatherData} newSearch={this.newSearch}/>;
+			displayed = <Results city={this.state.city} 
+													 weatherData={this.state.weatherData} 
+													 newSearch={this.newSearch}
+													 toggleSpeedUnit={this.toggleSpeedUnit}
+													 toggleTempUnit={this.toggleTempUnit}
+													 unitSpeed={this.state.unitSpeed}
+													 unitTemp={this.state.unitTemp}/>;
 		}
 		return (
 			<div className="page">
