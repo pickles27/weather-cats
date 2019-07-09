@@ -5,38 +5,37 @@ To use:
 * enter a major city in the searchbar and either press 'enter' or the 'search' button to submit search
 * choose your city among the list of search matches
 * enjoy the amazing cat pictures that correspond perfectly with the weather
+ 
 
-Cats used (s3/cloudfront): 
+* clear weather cat:<br>
+![c](https://d5lv058fmgggj.cloudfront.net/c.jpg)
 
-* clear weather cat:
-https://weathercatsmedia.s3.amazonaws.com/c.jpg / https://d5lv058fmgggj.cloudfront.net/c.jpg
+* thunderstorm cat:<br>
+![t](https://d5lv058fmgggj.cloudfront.net/t.jpg)
 
-* thunderstorm cat:
-https://weathercatsmedia.s3.amazonaws.com/t.jpg / https://d5lv058fmgggj.cloudfront.net/t.jpg
+* snow cat:<br>
+![sn](https://d5lv058fmgggj.cloudfront.net/sn.jpg)
 
-* snow cat:
-https://weathercatsmedia.s3.amazonaws.com/sn.jpg / https://d5lv058fmgggj.cloudfront.net/sn.jpg
+* sleet cat:<br>
+![sl](https://d5lv058fmgggj.cloudfront.net/sl.jpg)
 
-* sleet cat:
-https://weathercatsmedia.s3.amazonaws.com/sl.jpg / https://d5lv058fmgggj.cloudfront.net/sl.jpg
+* heavy rain cat:<br>
+![hr](https://d5lv058fmgggj.cloudfront.net/hr.jpg)
 
-* heavy rain cat:
-https://weathercatsmedia.s3.amazonaws.com/hr.jpg / https://d5lv058fmgggj.cloudfront.net/hr.jpg
+* light rain cat:<br>
+![lr](https://d5lv058fmgggj.cloudfront.net/lr.jpg)
 
-* light rain cat:
-https://weathercatsmedia.s3.amazonaws.com/lr.jpg / https://d5lv058fmgggj.cloudfront.net/lr.jpg
+* heavy cloud cat:<br>
+![hc](https://d5lv058fmgggj.cloudfront.net/hc.jpg)
 
-* heavy cloud cat:
-https://weathercatsmedia.s3.amazonaws.com/hc.jpg / https://d5lv058fmgggj.cloudfront.net/hc.jpg
+* light cloud cat:<br>
+![lc](https://d5lv058fmgggj.cloudfront.net/lc.jpg)
 
-* light cloud cat:
-https://weathercatsmedia.s3.amazonaws.com/lc.jpg / https://d5lv058fmgggj.cloudfront.net/lc.jpg
+* hail cat:<br>
+![h](https://d5lv058fmgggj.cloudfront.net/h.jpg)
 
-* hail cat:
-https://weathercatsmedia.s3.amazonaws.com/h.jpg / https://d5lv058fmgggj.cloudfront.net/h.jpg
-
-* showers cat:
-https://weathercatsmedia.s3.amazonaws.com/s.jpg / https://d5lv058fmgggj.cloudfront.net/s.jpg
+* showers cat:<br>
+![s](https://d5lv058fmgggj.cloudfront.net/s.jpg)
 
 
 **************
