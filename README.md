@@ -2,49 +2,41 @@
 check your weather forecast with the aid of kitties
 
 To use:
--enter a major city in the searchbar and either press 'enter' or the 'search' button to submit search
--choose your city among the list of search matches
--enjoy the amazing cat pictures that correspond perfectly with the weather
+* enter a major city in the searchbar and either press 'enter' or the 'search' button to submit search
+* choose your city among the list of search matches
+* enjoy the amazing cat pictures that correspond perfectly with the weather
 
-clear weather cat:
-https://weathercatsmedia.s3.amazonaws.com/c.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/c.jpg)
+Cats used (s3/cloudfront): 
 
-thunderstorm cat:
-https://weathercatsmedia.s3.amazonaws.com/t.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/t.jpg)
+* clear weather cat:
+https://weathercatsmedia.s3.amazonaws.com/c.jpg / https://d5lv058fmgggj.cloudfront.net/c.jpg
 
-snow cat:
-https://weathercatsmedia.s3.amazonaws.com/sn.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/sn.jpg)
+* thunderstorm cat:
+https://weathercatsmedia.s3.amazonaws.com/t.jpg / https://d5lv058fmgggj.cloudfront.net/t.jpg
 
-sleet cat:
-https://weathercatsmedia.s3.amazonaws.com/sl.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/sl.jpg)
+* snow cat:
+https://weathercatsmedia.s3.amazonaws.com/sn.jpg / https://d5lv058fmgggj.cloudfront.net/sn.jpg
 
-heavy rain cat:
-https://weathercatsmedia.s3.amazonaws.com/hr.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/hr.jpg)
+* sleet cat:
+https://weathercatsmedia.s3.amazonaws.com/sl.jpg / https://d5lv058fmgggj.cloudfront.net/sl.jpg
 
-light rain cat:
-https://weathercatsmedia.s3.amazonaws.com/lr.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/lr.jpg)
+* heavy rain cat:
+https://weathercatsmedia.s3.amazonaws.com/hr.jpg / https://d5lv058fmgggj.cloudfront.net/hr.jpg
 
-heavy cloud cat:
-https://weathercatsmedia.s3.amazonaws.com/hc.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/hc.jpg)
+* light rain cat:
+https://weathercatsmedia.s3.amazonaws.com/lr.jpg / https://d5lv058fmgggj.cloudfront.net/lr.jpg
 
-light cloud cat:
-https://weathercatsmedia.s3.amazonaws.com/lc.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/lc.jpg)
+* heavy cloud cat:
+https://weathercatsmedia.s3.amazonaws.com/hc.jpg / https://d5lv058fmgggj.cloudfront.net/hc.jpg
 
-hail cat:
-https://weathercatsmedia.s3.amazonaws.com/h.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/h.jpg)
+* light cloud cat:
+https://weathercatsmedia.s3.amazonaws.com/lc.jpg / https://d5lv058fmgggj.cloudfront.net/lc.jpg
 
-showers cat:
-https://weathercatsmedia.s3.amazonaws.com/s.jpg
-(cdn url: https://d5lv058fmgggj.cloudfront.net/s.jpg)
+* hail cat:
+https://weathercatsmedia.s3.amazonaws.com/h.jpg / https://d5lv058fmgggj.cloudfront.net/h.jpg
+
+* showers cat:
+https://weathercatsmedia.s3.amazonaws.com/s.jpg / https://d5lv058fmgggj.cloudfront.net/s.jpg
 
 
 **************
@@ -52,7 +44,7 @@ Stretch goals:
 
 1. offer temperature conversion between C and F and mph to km/h
 
-2. optimize 'results' page for narrow screens < 1000 px
+2. optimize 'results' page for narrow screens < 1000 px (make elements wrap)
 
 3. create collections of cat pictures for each weather type so users get more variety
 
