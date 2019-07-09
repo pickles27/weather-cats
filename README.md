@@ -5,8 +5,7 @@ To use:
 * enter a major city in the searchbar and either press 'enter' or the 'search' button to submit search
 * choose your city among the list of search matches
 * enjoy the amazing cat pictures that correspond perfectly with the weather
- 
-
+<br><br><br>Cats:<br>
 * clear weather cat:<br>
 ![c](https://d5lv058fmgggj.cloudfront.net/c.jpg)
 
