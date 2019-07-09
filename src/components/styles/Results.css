@@ -17,7 +17,7 @@
 .infoSpan {
 	margin-top: auto;
 	margin-bottom: auto;
-	flex: 50%;
+	flex: 1;
 	display: flex;
 	text-align: left;
 	flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 .imageSpan {
-	flex: 500px;
+	flex: 1;
 	text-align: right;
 	padding-right: 3%;
 	margin: 0;
