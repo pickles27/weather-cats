@@ -3,7 +3,25 @@ import './styles/List.css';
 
 var List = (props) => {
 	var locationList = props.locationList;
-	var displayed = locationList.map(location => (
+	var displayed = locationList.sort((a, b) => {
+		var index = 0;
+		if (a.title[index] > b.title[index]) {
+			return 1;
+		}
+		if (a.title[index] < b.title[index]) {
+			return -1;
+		}
+		while (index < (a.title.length < b.title.length ? a.title.length : b.title.length)) {
+			if (a.title[index] > b.title[index]) {
+				return 1;
+			}
+			if (a.title[index] < b.title[index]) {
+				return -1;
+			}
+			index++;
+		}
+		return 0;
+	}).map(location => (
 			<div key={location.woeid}>
 				<button className="locationButton" id={location.woeid} name={location.title} onClick={props.chooseLocation}>{location.title}</button>
 			</div>
