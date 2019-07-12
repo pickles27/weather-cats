@@ -33,10 +33,15 @@ class App extends React.Component {
 		var query = '/search/' + this.state.userInput;
 		axios.get(query)
 		.then(response => {
-			this.setState({
-				locationList: response.data,
-				page: 'list'
-			});
+			if (response.data.length === 1) {
+				var data = response.data[0];
+				this.setLocation(data.woeid, data.title);
+			} else {
+				this.setState({
+					locationList: response.data,
+					page: 'list'
+				});
+			}
 		})
 		.catch(error => {
 			console.log('error.response: ', error.response);
@@ -45,8 +50,11 @@ class App extends React.Component {
 
 	chooseLocation(e) {
 		e.preventDefault();
-		var url = '/data/' + e.target.id;
-		var city = e.target.name;
+		this.setLocation(e.target.id, e.target.name);
+	}
+
+	setLocation(id, city) {
+		var url = '/data/' + id;
 		axios.get(url)
 		.then(response => {
 			this.setState({
@@ -57,7 +65,7 @@ class App extends React.Component {
 		})
 		.catch(error => {
 			console.log('error.response: ', error.response);
-		})
+		});
 	}
 
 	newSearch() {
