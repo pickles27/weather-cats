@@ -4,6 +4,29 @@ import './styles/Results.css';
 var Results = (props) => {
 	var weatherData = props.weatherData;
 	var imageURL = 'https://d5lv058fmgggj.cloudfront.net/' + weatherData.weather_state_abbr + '.jpg';
+
+	function displayTemp(type) {
+		if (type === 'max') {
+			var temp = weatherData.max_temp;
+		} else {
+			var temp = weatherData.min_temp;
+		}
+		if (props.unitTemp === 'C') {
+			return Math.round(temp * 10) / 10;
+		} else {
+			//(0°C × 9/5) + 32 = F
+			return Math.round(((temp * 9 / 5) + 32) * 10) / 10;
+		}
+	}
+
+	function displaySpeed() {
+		if (props.unitSpeed === 'mph') {
+			return Math.round(weatherData.wind_speed * 10) / 10;
+		} else {
+			return Math.round((weatherData.wind_speed * 1.6) * 10) / 10;
+		}
+	}
+
 	return (
 		<div className="resultsPage">
 			<div className="resultsSpansDiv">
@@ -11,10 +34,12 @@ var Results = (props) => {
 				<span className="infoSpan">
 					<h2>{props.city}</h2>
 					<p className="weatherStatus">{weatherData.weather_state_name}</p>
-					<p>Max: {Math.round(weatherData.max_temp * 10) / 10}&deg;C</p>
-					<p>Min: {Math.round(weatherData.min_temp * 10) / 10}&deg;C</p>
+					<p>Max: {displayTemp('max')}&deg;{props.unitTemp}</p>
+					<p>Min: {displayTemp('min')}&deg;{props.unitTemp}</p>
 					<p>Humidity: {weatherData.humidity}%</p>
-					<p>Wind: {weatherData.wind_direction_compass} at {Math.round(weatherData.wind_speed * 10) / 10} mph</p>
+					<p>Wind: {weatherData.wind_direction_compass} at {displaySpeed()} {props.unitSpeed}</p>
+					<button className="unitToggle" onClick={props.toggleTempUnit}>&deg;{props.unitTemp}</button>
+					<button className="unitToggle" onClick={props.toggleSpeedUnit}>{props.unitSpeed}</button>
 					<button className="newSearchButton" onClick={props.newSearch}>new search</button>
 				</span>
 			</div>
