@@ -11,7 +11,7 @@ var List = (props) => {
 		if (a.title[index] < b.title[index]) {
 			return -1;
 		}
-		while (index < (a.title.length < b.title.length ? a.title.length : b.title.length)) {
+		while (index < a.title.length && index < b.title.length)) {
 			if (a.title[index] > b.title[index]) {
 				return 1;
 			}
