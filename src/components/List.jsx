@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles/List.css';
 
-var List = (props) => {
-	var locationList = props.locationList;
-	var displayed = locationList.sort((a, b) => {
-		var index = 0;
+const List = (props) => {
+	const locationList = props.locationList;
+	const displayed = locationList.sort((a, b) => {
+		let index = 0;
 		if (a.title[index] > b.title[index]) {
 			return 1;
 		}

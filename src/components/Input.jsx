@@ -2,8 +2,8 @@ import React from 'react';
 import List from './List.jsx';
 import './styles/Input.css';
 
-var Input = (props) => {
-	var list = null;
+const Input = (props) => {
+	let list = null;
 	if (props.page === 'list') {
 		list =  <List locationList={props.locationList} chooseLocation={props.chooseLocation}/>;
 	}

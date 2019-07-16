@@ -1,15 +1,16 @@
 import React from 'react';
 import './styles/Results.css';
 
-var Results = (props) => {
-	var weatherData = props.weatherData;
-	var imageURL = 'https://d5lv058fmgggj.cloudfront.net/' + weatherData.weather_state_abbr + '.jpg';
+const Results = (props) => {
+	const weatherData = props.weatherData;
+	const imageURL = 'https://d5lv058fmgggj.cloudfront.net/' + weatherData.weather_state_abbr + '.jpg';
 
 	function displayTemp(type) {
+		let temp;
 		if (type === 'max') {
-			var temp = weatherData.max_temp;
+			temp = weatherData.max_temp;
 		} else {
-			var temp = weatherData.min_temp;
+			temp = weatherData.min_temp;
 		}
 		if (props.unitTemp === 'C') {
 			return Math.round(temp * 10) / 10;

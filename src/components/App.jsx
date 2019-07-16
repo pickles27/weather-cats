@@ -47,11 +47,11 @@ class App extends React.Component {
 
 	searchLocations(e) {
 		e.preventDefault();
-		var query = '/search/' + this.state.userInput;
+		const query = '/search/' + this.state.userInput;
 		axios.get(query)
 		.then(response => {
 			if (response.data.length === 1) {
-				var data = response.data[0];
+				const data = response.data[0];
 				this.setLocation(data.woeid, data.title);
 			} else {
 				this.setState({
@@ -71,7 +71,7 @@ class App extends React.Component {
 	}
 
 	setLocation(id, city) {
-		var url = '/data/' + id;
+		const url = '/data/' + id;
 		axios.get(url)
 		.then(response => {
 			this.setState({
@@ -108,7 +108,7 @@ class App extends React.Component {
 	}
 
 	render() {
-		var displayed = null;
+		let displayed = null;
 		if (this.state.page === 'home' || this.state.page === 'list') {
 			displayed = <Input page={this.state.page} 
 												 getInput={this.getInput} 
